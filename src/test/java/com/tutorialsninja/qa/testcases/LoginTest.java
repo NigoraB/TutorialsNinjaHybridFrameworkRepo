@@ -39,7 +39,7 @@ public class LoginTest extends Base{
 		
 	}
 
-	@Test(priority=1,dataProvider="validCredentialsSupplier")
+	@Test(priority=1,dataProvider="validCredentialsSupplier", description = "Verify logging into the Application using valid credentials")
 	public void verifyLoginWithValidCredentials(String email,String password) {
 	
 		AccountPage accountPage = loginPage.login(email, password);
